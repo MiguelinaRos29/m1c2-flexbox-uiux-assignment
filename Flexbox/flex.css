@@ -1,3 +1,6 @@
+/* =========================
+   BASE
+========================= */
 body {
   margin: 0;
   padding: 0;
@@ -22,13 +25,15 @@ body {
   background: #76e1c1;
 }
 
-/* BASE ITEM */
+/* BASE ITEM (FLEX 5) */
 .item {
   width: 100px;
   height: 100px;
 }
 
-/* FLEX 1 */
+/* =========================
+   FLEX 1
+========================= */
 .flexOne {
   display: flex;
 }
@@ -36,7 +41,9 @@ body {
   margin: 5px;
 }
 
-/* FLEX 2 */
+/* =========================
+   FLEX 2
+========================= */
 .flexTwo {
   display: flex;
   flex-direction: column;
@@ -45,11 +52,14 @@ body {
   margin: 2px;
 }
 
-/* FLEX 3 */
+/* =========================
+   FLEX 3
+========================= */
 .flexThree {
   display: flex;
   flex-direction: row-reverse;
 }
+
 .flexThree .square {
   margin: 2px;
   display: flex;
@@ -57,7 +67,9 @@ body {
   align-items: flex-start;
 }
 
-/* FLEX 4 */
+/* =========================
+   FLEX 4
+   ========================= */
 .flexFour {
   display: flex;
   width: 350px;
@@ -68,7 +80,9 @@ body {
   margin: 5px;
 }
 
-/* FLEX 5 */
+/* =========================
+   FLEX 5
+========================= */
 .flexFive {
   display: flex;
   width: 350px;
@@ -81,7 +95,9 @@ body {
   flex-grow: 2;
 }
 
-/* FLEX 6 */
+/* =========================
+   FLEX 6
+========================= */
 .flexSix {
   width: 500px;
   height: 400px;
@@ -110,16 +126,14 @@ body {
   justify-content: space-evenly;
 }
 
- 
- /* FLEX 7 */
-
-
+/* =========================
+   FLEX 7
+========================= */
 .flexSeven {
   height: 400px;
   width: 500px;
   display: flex;
   justify-content: space-between;
-  background-color: #eeeeee;
 }
 
 /* columnas */
@@ -129,36 +143,40 @@ body {
 .flexSeven .four {
   display: flex;
   flex-direction: column;
-  height: 100%;   
+  height: 100%;
 }
 
-/* comportamiento vertical */
 .flexSeven .one { justify-content: center; }
 .flexSeven .two { justify-content: flex-end; }
 .flexSeven .three { justify-content: flex-start; }
 .flexSeven .four { justify-content: space-between; }
 
-
-/* FLEX 8 */
+/* =========================
+   FLEX 8
+   ========================= */
 .flexEight {
   display: flex;
+  flex-direction: column;
   height: 400px;
   width: 300px;
   background-color: #eeeeee;
 }
 
+/* cada fila ocupa 1/3 del alto */
 .flexEight .one,
 .flexEight .two,
 .flexEight .three {
   display: flex;
-  width: 100px;
+  flex: 1;
 }
 
 .flexEight .one { align-items: center; }
 .flexEight .two { align-items: flex-end; }
 .flexEight .three { align-items: flex-start; }
 
-/* FLEX 9 */
+/* =========================
+   FLEX 9
+========================= */
 .flexNine {
   display: flex;
   width: 450px;
@@ -171,4 +189,3 @@ body {
 #special {
   align-self: flex-end;
 }
-
